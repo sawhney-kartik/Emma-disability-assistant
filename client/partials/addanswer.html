@@ -1,0 +1,30 @@
+<div>
+
+
+<div>
+<a href="#/dashboard">Home</a> | <a href="#/index"  ng-click="logout()">Log Out</a> 
+</div>
+
+<h2>{{onequestion.question}}</h2>
+<h4>{{onequestion.description}}</h2>
+<form name="myform">
+	<div>
+		<label>Your Answer</label>
+		<textarea ng-model="ans.answer" name="answer" ng-minlength="10" required></textarea>
+	</div>
+	<div>
+		<label>Provide any supporting details (optional)</label>
+		<textarea ng-model="ans.supporting"></textarea>
+	</div>
+
+		<button ng-click="submitAnswer(ans)">Submit</button>
+</form>
+<a href="#/dashboard">Cancel</a>
+
+
+
+
+
+
+
+

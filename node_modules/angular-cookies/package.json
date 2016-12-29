@@ -1,0 +1,69 @@
+{
+  "name": "angular-cookies",
+  "version": "1.5.8",
+  "description": "AngularJS module for cookies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.js.git"
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "cookies",
+    "client-side"
+  ],
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "homepage": "http://angularjs.org",
+  "jspm": {
+    "shim": {
+      "angular-cookies": {
+        "deps": [
+          "angular"
+        ]
+      }
+    }
+  },
+  "gitHead": "a2247a1efb436f0293289fb74ebd76fbe52a7422",
+  "_id": "angular-cookies@1.5.8",
+  "_shasum": "08f39fa2e17b6e3a916cd3ba7352f9d702e8a9fe",
+  "_from": "angular-cookies@latest",
+  "_npmVersion": "2.15.8",
+  "_nodeVersion": "4.4.7",
+  "_npmUser": {
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "08f39fa2e17b6e3a916cd3ba7352f9d702e8a9fe",
+    "tarball": "https://registry.npmjs.org/angular-cookies/-/angular-cookies-1.5.8.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/angular-cookies-1.5.8.tgz_1469201424585_0.8652908557560295"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-cookies/-/angular-cookies-1.5.8.tgz",
+  "readme": "ERROR: No README data found!"
+}
