@@ -1,15 +1,46 @@
 <div>
-  <a href="#/dashboard">HOME</a> | <a href="#/" ng-click="logout()">Log Out</a> 
+
+	<a href="#/dashboard">Home</a> 
+	| <a href="#/" ng-click="logout()">Log Out</a> 
+
 </div>
-  <h4>Add question</h4>
-I'm sorry I couldn't get an answer for you right now. Please add it to my queue, and I'll hope to have an answer for you soon. 
-    <form name="myform">
-      <div><label>Question</label><textarea ng-model="quest.question" name="question" ng-minlength='10' required></textarea></div>
-      <div><label>Description (optional)</label><textarea ng-model="quest.description" name="description"></textarea></div>
-      <div><label>Space-separated keywords/tags (optional, but highly recommended)</label><textarea ng-model="quest.keywords" name="keywords"></textarea></div>
+  
 
-      <button ng-click="addQuestion(quest)">Submit</button>
-      <a href="#/dashboard">Go back</a>
-    </form>
+<!--<h3>Add question</h3>
+-->
+
+<p>I'm sorry I couldn't get an answer for you right now. Please add it to my queue, and I'll hope to have an answer for you soon. </p>
+    
+
+<form name="myform">
+      
+	<table><tr>
+	<td>
+		<label><b>Question</b></label>
+		</td>
+		<td>
+		<textarea ng-model="quest.question" name="question" ng-minlength='10' required></textarea>
+		</td>
+	</tr>
 
 
+	<tr><td>
+		<label><b>Description</b> <br> (optional)</label>
+	</td><td>	
+		<textarea ng-model="quest.description" name="description"></textarea>
+	</td></tr>
+      
+
+	<tr><td>
+		<label><b>Space-separated keywords/tags</b><br> (optional, but highly recommended)</label>
+	</td><td>	
+		<textarea ng-model="quest.keywords" name="keywords"></textarea>
+	</td></tr></table>
+
+
+	<br>
+	<button ng-click="addQuestion(quest)">Submit</button>
+      
+	<a href="#/dashboard">Go back</a>
+    
+</form>

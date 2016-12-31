@@ -11,6 +11,7 @@ var questionSchema = new mongoose.Schema({
   	},
 	description: String,
 	keywords: String,
+	email: String,
 	answers: [{type: Schema.Types.ObjectId, ref: "Answer"}]
 })
 mongoose.model("Question", questionSchema)

@@ -6,6 +6,11 @@ var userSchema = new mongoose.Schema({
     required: [true, "Name cannot be blank"],
     minlength: [2, "Name must be at least 2 characters long"]
   	},
+	email: {
+    type: String,
+    required: [true, "Email cannot be blank"],
+    minlength: [2, "Email must be at least 2 characters long"]
+  	},
 	questions: [{type: Schema.Types.ObjectId, ref: "Question"}],
 
 })

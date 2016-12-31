@@ -4,6 +4,8 @@ myApp.controller("questionsController", function($scope, $cookies, $location, $r
     console.log("This is my question data in my questionsController", question_info);
     console.log("This is my user_id in my questions controller", $cookies._id);
     question_info.userid = $cookies._id;
+    question_info.email = $cookies._email;
+
     questionFactory.submitQuestion(question_info, function(){
     $location.url("/dashboard");
     })

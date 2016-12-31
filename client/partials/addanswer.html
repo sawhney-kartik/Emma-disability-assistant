@@ -1,30 +1,61 @@
+<br>
 <div>
+	
 
 
 <div>
-<a href="#/dashboard">Home</a> | <a href="#/index"  ng-click="logout()">Log Out</a> 
+		
+<a href="#/dashboard">Home</a> 
+		| <a href="#/index"  ng-click="logout()">Log Out</a> 
+	
 </div>
 
-<h2>{{onequestion.question}}</h2>
-<h4>{{onequestion.description}}</h2>
-<form name="myform">
-	<div>
-		<label>Your Answer</label>
-		<textarea ng-model="ans.answer" name="answer" ng-minlength="10" required></textarea>
-	</div>
-	<div>
-		<label>Provide any supporting details (optional)</label>
-		<textarea ng-model="ans.supporting"></textarea>
-	</div>
-
-		<button ng-click="submitAnswer(ans)">Submit</button>
-</form>
-<a href="#/dashboard">Cancel</a>
 
 
+	<h2>{{onequestion.question}}</h2>
+
+
+	<h4>{{onequestion.description}}</h4>
+
+
+	<form name="myform">
+
+		<table><tr>
+		<td>
+		
+			<label>Your Answer</label>
+		
+		</td>
+		<td>
+			<textarea placeholder="Your Answer" ng-model="ans.answer" name="answer" ng-minlength="10" required></textarea>
+
+		</td>
+</tr>	
+
+		<tr><td>
+		
+			<label>Provide any supporting details (optional)</label>
+		
+		</td><td>
+			<textarea placeholder="Provide any supporting details" ng-model="ans.supporting"></textarea>
+	
+		</td></tr>
+
+
+		</table>
+			<br><button ng-click="submitAnswer(ans)">Submit</button> <a href="#/dashboard">Cancel</a>
+
+	</form>
+
+
+	
 
 
 
 
 
 
+
+
+
+</div>

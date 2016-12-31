@@ -1,25 +1,29 @@
-<h1>Emma, your personal assistant</h1>
 <div>
-<a href="#/new_question">Add a question to the pending queue</a> | <a href="#/dashboard">Home</a> | <a href="#/"  ng-click="logout()">Log out</a>
+
+	<a align="right" href="#/new_question">Add a question to the pending queue</a>
+	| <a align="right" href="#/dashboard">Home</a> 
+	| <a align="right" href="#/"  ng-click="logout()">Log out</a>
+
 </div>
-Hi, you can ask me any question about disability, and I will try to answer it using my knowledge and what other great friends have taught me. If you don't get an answer instantaneously, try specific keywords. If that doesn't work, then unfortunately, I don't have an answer for you yet-I'm still learning and rely on good friends like you to teach me. 
-  <input type="text" placeholder="What's your question?"  ng-model="filter_name">
+<p>Hi {{name}}, you can ask me any question about disability, and I will try to answer it using my knowledge and what other great friends have taught me. If you don't get an answer instantaneously, try specific keywords. If that doesn't work, then unfortunately, I don't have an answer for you yet-I'm still learning and rely on good friends like you to teach me. You can add the question to my pending queue, and I'll let you know when I have an answer.</p> 
+<form>
+<input style="width:500px;align:center;" type="text" placeholder="What's your question?"  ng-model="filter_name">
 
 
-<table>
-    <tr>
-      <td>Questions</td>
-      <td>Answers (count)</td>
-      <td>Action</td>
-    </tr>
+
+</form>
+
+<table align="center">
+
     <tr ng-repeat="quest in all_questions | filter: criteriaMatch(filter_name)">
-		<td>{{quest.question}}</td>
-		<td>{{quest.answers.length}}</td>
-		<td>
-			<a href="#/question/{{quest._id}}">Show</a>
-			<a href="#/question/{{quest._id}}/newanswer">Have a better answer?</a>
-		</td>
-    </tr>
+		
+	<td><a href="#/question/{{quest._id}}">{{quest.question}}</a></td>
+
+     </tr>
+
 </table>
 
+
+
 </div>
+

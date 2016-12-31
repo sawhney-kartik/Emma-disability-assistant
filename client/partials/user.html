@@ -1,8 +1,13 @@
-  Hi, I'm Emma, your personal disability assistant. To begin, please input the name I know you by. If I don't know you yet, let's be friends-please introduce yourself. 
+<br><br>
+
+<p>Hi, I'm Emma, your personal disability assistant. To begin, please input the name I know you by and a valid email address. If I don't know you yet, let's be friends-please introduce yourself.</p>  
   <form name ="myform">
-    <label>What's your name?</label>
-    <input type='text' name='user_input' ng-model='name' ng-minlength='3' required></input>
-    <button ng-click='createUser(name)'>LOGIN</button>
+	<input type='text' placeholder="What's your name?" name='user_input' ng-model='name' ng-minlength='3' required></input>
+    
+	<input type='text' placeholder="What's your email?" name='user_input1' ng-model='email' ng-minlength='3' required></input>
+    
+
+    <button ng-click='createUser(name, email)'>LOGIN</button>
   </form>
 
 
